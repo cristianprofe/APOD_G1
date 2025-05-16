@@ -2,7 +2,7 @@
 import { Image, StyleSheet, View } from "react-native";
 import TextWhite from "./textWhite";
 import Boton from "./boton";
-
+//lo mismo que con visor
 export default Card = (props) => {
   return (
     <View style={styles.container}>

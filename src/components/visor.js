@@ -3,14 +3,13 @@ import { StyleSheet, View, Image } from "react-native";
 import TextWhite from "./textWhite";
 import Boton from "./boton";
 
-export default Card = () => {
+//recibir y mostrar la fecha
+//
+export default Card = ({ titulo, url }) => {
   return (
     <View style={styles.container}>
-      <TextWhite texto="Titulo" />
-      <Image
-        source={require("../../assets/images/NASA.png")}
-        style={styles.img}
-      />
+      <TextWhite texto={titulo} />
+      <Image source={{ uri: url }} style={styles.img} />
       <TextWhite texto="fecha" />
       <Boton />
     </View>
