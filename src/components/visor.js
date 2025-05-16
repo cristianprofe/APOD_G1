@@ -5,13 +5,13 @@ import Boton from "./boton";
 
 //recibir y mostrar la fecha
 //
-export default Card = ({ titulo, url }) => {
+export default Card = ({ titulo, url, onPress }) => {
   return (
     <View style={styles.container}>
       <TextWhite texto={titulo} />
       <Image source={{ uri: url }} style={styles.img} />
       <TextWhite texto="fecha" />
-      <Boton />
+      <Boton onPress={onPress} />
     </View>
   );
 };
