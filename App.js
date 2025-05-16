@@ -1,15 +1,17 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import TextWhite from "./src/components/textWhite";
+import Header from "./src/components/header";
+import Visor from "./src/components/visor";
+import Card from "./src/components/card";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TextWhite texto="Hola Mundo" fontSize={25} />
-      <TextWhite texto="Hola Mundo" fontSize={6} />
-      <TextWhite texto="Hola Mundo" fontSize={50} />
-      <TextWhite texto="Hola Mundo" />
-      <StatusBar style="auto" />
+      <Header />
+      <Visor />
+      <Card />
+
+      <StatusBar style="light" />
     </View>
   );
 }
